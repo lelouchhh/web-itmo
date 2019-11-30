@@ -1,0 +1,48 @@
+#header{
+	border-radius: 10px 10px 0 0;
+	margin-top: 20px;
+	background-color: yellow;
+	min-height: 200px;
+	line-height: 200px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+body {
+	background-color: #f3f3f3;
+ }
+
+#slider1 {
+	background: green;
+	float: left;
+	margin-top: 200px;
+	min-width: 150px;
+	min-height: 150px;
+	margin-left: 10%;
+}
+#slider2 {
+	background-color: green;
+	float: right;
+	margin-top: 200px;
+	margin-right: 10%;
+	min-width: 150px;
+	min-height: 150px;
+}
+
+#footer {
+	font-weight: bold;
+	color: #fff;
+	background: #505050;
+	min-height: 30px;
+	line-height: 30px;
+	border-radius: 0 0 10px 10px;
+}
+div {
+	padding: 5px;
+	margin: 1px;
+}
+#main {
+	background: #cb9c00;
+	margin-left: 20%;
+	margin-right: 20%;
+	min-height: 600px;
+}

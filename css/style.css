@@ -1,0 +1,174 @@
+html, body {
+	margin: 0;
+	padding: 0;
+  min-width: 250px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+  background-color: #eee;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 940px; 
+	padding: 0 10px; 
+}
+
+
+.header {
+  height: 800px;
+  text-align: center; 
+  background: url(https://i.artfile.me/wallpaper/05-01-2016/2048x1369/priroda-voshody-zakaty-sumerki-1001369.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.header .container {
+	position: relative;
+	top: 200px;
+}
+
+.header h1 {
+  color: #eee;
+	font-size: 80px;
+	line-height: 100px; 
+	margin-top: 0;
+	margin-bottom: 30px;
+}
+
+.header p {
+  color: #eee;
+}
+
+.header .btn {
+  background-color: #000;
+  color: #eee;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width:850px) {
+	.header h1 {
+		font-size: 120px;
+	}
+}
+
+.header p {
+	font-weight: 500;
+	letter-spacing: 8px;
+	margin-bottom: 40px;
+	margin-top: 0;
+}
+
+
+
+.nav {
+  background-color: #000;
+}
+
+.nav ul {
+	list-style: none;
+	margin: 0 0 0 10px;
+	text-align: center; 
+}
+
+.nav ul li {
+  background-color: #000;
+  display: inline-block;
+  color: #eee;
+  padding: 30px 10px;
+  margin: 0;
+}
+
+
+.main .container {
+	margin: 80px auto;
+  max-width: 940px;
+  padding: 0px 10px;
+}
+
+
+
+.jumbotron {
+	height: 600px; 
+	text-align: right;
+}
+
+.jumbotron .container {
+	position: relative;
+	top: 220px;
+}
+
+
+.footer { 
+	font-size: 14px;
+}
+
+.main img {
+  float: left;
+  margin: 50px 80px 50px 0;
+}
+
+.jumbotron {
+  height: 600px;
+  text-align: right; 
+  background: url(https://st-gdefon.gallery.world/wallpapers_original/253065_gallery.world.jpg?9b30f88865a6ee068aa988b568d8492f) no-repeat center;
+  background-size: cover;
+}
+
+
+.jumbotron h1 {
+  color: #eee;
+	font-size: 60px;
+	line-height: 100px; 
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+.jumbotron p {
+  color: #eee;
+}
+
+.jumbotron .btn {
+  background-color: #000;
+  color: #eee;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+	background: #117bff;
+	cursor: pointer; 
+	transition: background .5s;  
+}
+
+.footer {
+  background-color: #000;
+  height: 60px;
+}
+
+.footer .container {
+  color: #eee;
+  padding: 20px 0 0 50px;
+}
+@media (max-width: 500px) {
+  .header h1 {
+    font-size: 50px;
+    line-height: 64px;
+  }
+
+  .main, .jumbotron {
+    padding: 0 30px;
+  }
+
+  .main img {
+		width: 100%;
+  }
+}
