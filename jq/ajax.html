@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title></title>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <button class="reset">reset</button>
+        <div class="content"></div>
+        <script>
+            $(`.reset`).click(function() {
+                $(`.content`).load(`https://inxaoc.github.io/example/ajax-1.html`);
+                jQuery.ajax({
+                    url: `https://inxaoc.github.io/example/ajax.json`,
+                    success: function(data) {
+                        console.log(data);
+                        let code = `<ul>`;
+                        code += (function makeList(data) {
+                            let code_2 = ``;
+                            for (const key in data) {
+                                if (data.hasOwnProperty(key)) {
+                                    const element = data[key];
+                                    code_2 += `<li>${key}: `;
+                                    if (typeof element === `object`) {
+                                        code_2 += `<ul>`;
+                                        code_2 += makeList(element);
+                                        code_2 += `</ul>`;
+                                    } else if (typeof element === `array`) {
+                                        code_2;
+                                    } else {
+                                        code_2 += `${element}`;
+                                    }
+                                    code_2 += `</li>`;
+                                }
+                            }
+                            return code_2;
+                        })(data);
+                        code += `</ul>`;
+                        console.log(`\n\n\n${code}`);
+                        $(`.content`).append(code);
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
