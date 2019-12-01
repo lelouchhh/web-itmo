@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Yaghami Light</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<script src="script.js"></script>
+<div id="text">
+	<p>write rows: <input type="text"  placeholder="1" id="rows"></p>
+	<p>write cols:<input type="text"  placeholder="1" id="cols"></p>
+	<button id="button" value="button" onclick="button_func()">click on me!</button>
+</div>
+<div id="table">
+	<table id="tables">
+		
+	</table>
+</div>
+<div id="size">
+	<p>write size(pixels): <input type="text" id="input_size"></p>
+	<select id="select">
+  		<option value="dotted ">dotted</option>
+  		<option value="dashed">dashed</option>
+  		<option value="solid">solid</option>
+  		<option value="double">double</option>
+  		<option value="groove">groove</option>
+  		<option value="ridge">ridge</option>
+  		<option value="outset">outset</option>
+  		<option value="inset">inset</option>
+	</select>
+	<button id ="size_button" value="button" onclick="size_edit(this.id)">click on me</button>
+</div>
+<div id="insert_head">
+	<p><input type="text" id="insert_text">text descriptions</p>
+	<p><button id="insert_button" onclick="insert_head()">click on me</button></p>
+</div>
+<div id="delete_col">
+	<p><input type="text" id="delete_input">write col you wanna delete: </p>
+	<button id="delete_button" onclick="delete_col()">click on me</button>
+</div>
+<div id="magic">
+	<button id="magic_button" onclick="magic()">magic</button>
+</div>
+
+<div id="delete_tables">
+	<button id="delete_all_tables", onclick="delete_tables()">click here for delete all tables</button>
+</div>
+</body>
+</html>

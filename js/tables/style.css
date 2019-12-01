@@ -1,0 +1,16 @@
+body {
+	background-color: #F3F3F3;
+}
+td, th {
+	padding: 5px;
+}
+textarea {
+	height: 90%;
+	width: 100%;
+}
+table {
+	border-style: hidden;
+}
+#size, #insert_head, #delete_col, #magic, #delete_tables {
+	visibility: hidden;
+}
